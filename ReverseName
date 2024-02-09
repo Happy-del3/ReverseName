@@ -1,0 +1,34 @@
+import java.util.Scanner;
+ 
+public class StringReverse {
+ 
+    public static void main(String[] args) {
+        // Declare variables and constants
+        String originalName = " ", reverseName = " ";
+        char c;
+        
+        // Create Scanner object
+        Scanner sc = new Scanner(System.in);
+        
+        // Prompt for user to enter a name
+        System.out.print("Please enter a name: ");
+        
+        // Read a name entered by the user
+        originalName = sc.nextLine();
+        
+        // Display original name entered by the user
+        System.out.println("Original name is " + originalName);
+        
+        // Initialize and evaluate the original name 
+        for(int i = 0; i < originalName.length(); i++){
+            
+            // Reverse the original name
+            c = originalName.charAt(i);
+            reverseName = c + reverseName;
+           
+        }
+        // Display name reversed 
+        System.out.println("Reverse name is " + reverseName);
+    }
+    
+}
